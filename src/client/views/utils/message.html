@@ -1,0 +1,14 @@
+<div class="modal" :class="[{ 'is-active': isActive }, typeStyle]">
+    <div class="modal-background" v-on:click="close"></div>
+    <div class="modal-content">
+        <article class="message">
+            <div class="message-header">
+                <p>{{ title }}</p>
+                <button class="delete" aria-label="delete" v-on:click="close"></button>
+            </div>
+            <div class="message-body">
+                {{ message }}
+            </div>
+        </article>
+    </div>
+</div>

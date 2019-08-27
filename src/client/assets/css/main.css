@@ -1,0 +1,56 @@
+.full-width {
+    max-width: 100%;
+}
+
+.container {
+    padding-top: 10px;
+    width: 100%;
+    max-width: 2350px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.utils-notification {
+    margin-bottom: 7px;
+    width: 22.5vw;
+    display: block;
+}
+
+.animated.flipOutX {
+    position: absolute;
+    animation-duration: 1s;
+}
+
+.utils-notifications {
+    position: fixed;
+    top: 65px;
+    right: 0;
+    width: 23vw;
+    padding-top: 7px;
+    padding-right: 7px;
+}
+
+.utils-notifications-move {
+    transition: all 1s 1s;
+}
+
+.vertically-spaced > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+.error-message {
+    color: #cd0930;
+    background-color: #FEF5F7;
+}
+
+.error-message > .content > h3 {
+    color: #cd0930;
+}
+
+.warning-message {
+    background-color: #FFFDF6
+}
+
+header.card-header {
+    background-color: #F5F5F5;
+}

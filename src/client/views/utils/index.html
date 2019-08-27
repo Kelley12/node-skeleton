@@ -1,0 +1,28 @@
+<div class="utils">
+    <alert
+        :is-active="alertIsActive"
+        :title="alertTitle"
+        :message="alertMessage"
+        @close="markNotActive('alertIsActive')">
+    </alert>
+    <confirm
+        :is-active="confirmIsActive"
+        :title="confirmTitle"
+        :message="confirmMessage"
+        @close="markNotActive('confirmIsActive')"
+        @response="$emit('confirmResponse', $event)">
+    </confirm>
+    <message
+        :is-active="messageIsActive"
+        :title="messageTitle"
+        :message="messageMessage"
+        :type-style="messageTypeStyle"
+        @close="markNotActive('messageIsActive')">
+    </message>
+    <prompt
+        :is-active="promptIsActive"
+        :title="promptTitle"
+        @close="markNotActive('promptIsActive')"
+        @response="$emit('promptResponse', $event)">
+    </prompt>
+</div>

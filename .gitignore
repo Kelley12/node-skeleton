@@ -1,0 +1,9 @@
+node_modules
+dist
+app-dist
+server-dist
+release.zip
+*.tgz
+.DS_Store
+.history
+.vscode/tasks.json

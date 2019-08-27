@@ -1,0 +1,18 @@
+<div class="modal" :class="{ 'is-active': isActive }">
+    <div class="modal-background" v-on:click="close"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">{{ title }}</p>
+        <button class="delete" aria-label="close" v-on:click="close"></button>
+      </header>
+      <section class="modal-card-body">
+        {{ message }}
+      </section>
+      <footer class="modal-card-foot" style="justify-content: flex-end;">
+        <div class="field is-grouped">
+            <button class="button is-link" v-on:click="yes">Yes</button>
+            <button class="button is-outlined" v-on:click="close">No</button>
+        </div>
+      </footer>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="notifications-container">
+    <transition-group
+        tag="div"
+        name="utils-notifications"
+        enter-active-class="animated bounceInLeft"
+        leave-active-class="animated flipOutX"
+        move-class="utils-notifications-move"
+        class="utils-notifications"
+    >
+        <div v-for="(note, index) in notes" :key="note.key">
+            <notification :notification="note" v-on:click.native="removeNotification(index)"></notification>
+        </div>
+    </transition-group>
+</div>
